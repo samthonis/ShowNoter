@@ -1,0 +1,33 @@
+* {
+    margin: 10px;
+}
+
+body {
+    text-align: left;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "input input"
+    "htmlOutput styledOutput";
+}
+
+input {
+    width: 80%;
+}
+
+#formInputs {
+    grid-area: input;
+}
+
+#htmlOutputSection {
+    grid-area: htmlOutput;
+}
+
+#styledOutputSection {
+    grid-area: styledOutput;
+}
+
+textarea {
+    height: 100px;
+    width: 200px;
+}
